@@ -40,7 +40,7 @@ sns.histplot(reddit_data['upvote_ratio'], bins=20, kde=True)
 plt.title('Distribution of Upvote Ratios')
 plt.xlabel('Upvote Ratio')
 plt.ylabel('Frequency')
-plt.show()
+# plt.show()
 
 # Distribution of scores
 plt.figure(figsize=(10, 6))
@@ -77,7 +77,7 @@ sns.histplot(reddit_data['sentiment_polarity'], bins=30, kde=True)
 plt.title('Distribution of Sentiment Polarity in Reddit Post Titles')
 plt.xlabel('Sentiment Polarity')
 plt.ylabel('Frequency')
-plt.show()
+# plt.show()
 
 # Summary statistics for sentiment polarity
 sentiment_summary = reddit_data['sentiment_polarity'].describe()
@@ -101,7 +101,7 @@ plt.figure(figsize=(10, 6))
 plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis('off')
 plt.title('Most Frequent Words in Reddit AI Post Titles')
-plt.show()
+# plt.show()
 
 # print(word_sum)
 
@@ -186,7 +186,7 @@ for topic, words in topic_words.items():
 
 plt.tight_layout()
 plt.suptitle('Top 10 Keywords for Each Topic', fontsize=16, y=1.02)
-plt.show()
+# plt.show()
 
 
 # Filtering the dataset for posts that specifically mention terms related to jobs, employment, or opportunities
@@ -239,7 +239,7 @@ for topic, words in job_related_topic_words.items():
 
 plt.tight_layout()
 plt.suptitle('Top 10 Keywords for Each Job-Related Topic', fontsize=16, y=1.02)
-plt.show()
+# plt.show()
 
 # print(job_related_topic_words)
 
@@ -320,5 +320,5 @@ fig.text(0.1, 0.48, """Key Findings:
 4. Public sentiment towards AI has been volatile over time, but generally leans negative.""", fontsize=16, verticalalignment="top")
 
 plt.tight_layout(rect=[0, 0, 1, 0.96])
-plt.show()
+# plt.show()
 
